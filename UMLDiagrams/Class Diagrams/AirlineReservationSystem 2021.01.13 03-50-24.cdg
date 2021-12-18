@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AirlineReservationSystem">
+  <ClassDiagramComponents>
+    <Class name="AirlineReservationSystem" package="airlinereservationsystem" visibility="public" xPosition="47.0" yPosition="16.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="airport" package="airlinereservationsystem" visibility="public" xPosition="293.0" yPosition="-9.0">
+      <Fields>
+        <Field name="time_trip" type="String" visibility="package" isStatic="true"/>
+        <Field name="time_launch" type="String" visibility="package" isStatic="true"/>
+        <Field name="time_landing" type="String" visibility="package" isStatic="true"/>
+        <Field name="landing" type="String" visibility="package" isStatic="true"/>
+        <Field name="destination" type="String" visibility="package" isStatic="true"/>
+        <Field name="num_line" type="int" visibility="package" isStatic="true"/>
+        <Field name="num_capacity" type="int" visibility="package" isStatic="true"/>
+        <Field name="num_ticket" type="boolean" visibility="package" isStatic="true"/>
+        <Field name="num_flight" type="int" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getTime_trip" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setTime_trip" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="time_trip"/>
+        </Method>
+        <Method name="getTime_launch" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setTime_launch" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="time_launch"/>
+        </Method>
+        <Method name="getTime_landing" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setTime_landing" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="time_landing"/>
+        </Method>
+        <Method name="getLanding" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setLanding" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="landing"/>
+        </Method>
+        <Method name="getDestination" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setDestination" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="destination"/>
+        </Method>
+        <Method name="getNum_line" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="setNum_line" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="num_line"/>
+        </Method>
+        <Method name="getNum_capacity" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="setNum_capacity" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="num_capacity"/>
+        </Method>
+        <Method name="isNum_ticket" returnType="boolean" visibility="public" isStatic="true"/>
+        <Method name="setNum_ticket" returnType="void" visibility="public" isStatic="true">
+          <Argument type="boolean" name="num_ticket"/>
+        </Method>
+        <Method name="getNum_flight" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="setNum_flight" returnType="void" visibility="public" isStatic="true">
+          <Argument type="int" name="num_flight"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="flight" package="airlinereservationsystem" visibility="public" xPosition="78.0" yPosition="188.0">
+      <Fields>
+        <Field name="input" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="passenger" package="airlinereservationsystem" visibility="public" xPosition="928.0" yPosition="-9.0">
+      <Fields>
+        <Field name="input" type="Scanner" visibility="package"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="passportID" type="int" visibility="private"/>
+        <Field name="Age" type="int" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="Gender" type="String" visibility="private"/>
+        <Field name="towen" type="String" visibility="private"/>
+        <Field name="country" type="String" visibility="private"/>
+        <Field name="phone_Number" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="Age"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getPassportID" returnType="int" visibility="public"/>
+        <Method name="setPassportID" returnType="void" visibility="public">
+          <Argument type="int" name="passportID"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="getGender" returnType="String" visibility="public"/>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="String" name="Gender"/>
+        </Method>
+        <Method name="getTowen" returnType="String" visibility="public"/>
+        <Method name="setTowen" returnType="void" visibility="public">
+          <Argument type="String" name="towen"/>
+        </Method>
+        <Method name="getCountry" returnType="String" visibility="public"/>
+        <Method name="setCountry" returnType="void" visibility="public">
+          <Argument type="String" name="country"/>
+        </Method>
+        <Method name="getPhone_Number" returnType="int" visibility="public"/>
+        <Method name="setPhone_Number" returnType="void" visibility="public">
+          <Argument type="int" name="phone_Number"/>
+        </Method>
+        <Method name="showinfo" returnType="void" visibility="public"/>
+        <Method name="setyourinfo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="reservation" package="airlinereservationsystem" visibility="public" xPosition="661.0" yPosition="163.0">
+      <Fields>
+        <Field name="seating" type="boolean[]" visibility="package"/>
+        <Field name="input" type="Scanner" visibility="package"/>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="start" returnType="void" visibility="public"/>
+        <Method name="makeReservation" returnType="void" visibility="public"/>
+        <Method name="firstClassSeat" returnType="// assign a first class seat void" visibility="public"/>
+        <Method name="economySeat" returnType="// assign an economy seat void" visibility="public"/>
+        <Method name="printSeatingChart" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="airlinereservationsystem.flight" target="airlinereservationsystem.airport"/>
+    <IsRelation name="is" source="airlinereservationsystem.reservation" target="airlinereservationsystem.passenger"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
